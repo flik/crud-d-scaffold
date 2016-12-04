@@ -9,13 +9,40 @@
   (ii) Show sorted list with filter by conditions (include word or range value).
 
 
-
 ## How to Install
 
   At first, this package needs [Collective\Html] package.
   See document and Install [Collective\Html].
-  https://laravelcollective.com/docs/5.2/html
+  
+### Step 0: https://laravelcollective.com/docs/5.2/html
+  
+Begin by installing this package through Composer. Run the following from the Terminal:
 
+```
+composer require "laravelcollective/html":"^5.2.0"
+
+```
+Next, add your new provider to the providers array of config/app.php:
+
+```
+  'providers' => [
+    // ...
+    Collective\Html\HtmlServiceProvider::class,
+    // ...
+  ],
+
+```
+Finally, add two class aliases to the aliases array of config/app.php:
+
+```
+  'aliases' => [
+    // ...
+      'Form' => Collective\Html\FormFacade::class,
+      'Html' => Collective\Html\HtmlFacade::class,
+    // ...
+  ],
+  
+```
 ### Step 1: Install Through Composer
 
 ```
