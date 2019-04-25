@@ -74,7 +74,7 @@ You're all set. Run `php artisan` from the console, and you'll see the new comma
 
 
 
-## Examples 1 - Create Application and make relationship.
+## Examples 1 - Create Application and make relationship. or https://github.com/dog-ears/crud-d-scaffold
 
 (i) publish public resource.
 ```
