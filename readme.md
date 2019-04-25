@@ -47,6 +47,8 @@ Finally, add two class aliases to the aliases array of config/app.php:
 ### Step 1: Install Through Composer
 
 ```
+composer require dog-ears/crud-d-scaffold
+or 
 "require": {
     "dog-ears/crud-d-scaffold": "1.*"
 }
